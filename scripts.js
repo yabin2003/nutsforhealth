@@ -120,6 +120,7 @@ function updateCart() {
             </div>
         </div>
     `).join('');
+    alert("This item added to the cart. Please Check it out😊");
 
     // Update total
     const total = cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
