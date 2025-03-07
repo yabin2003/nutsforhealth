@@ -63,6 +63,7 @@ const cartItems = document.getElementById('cartItems');
 const cartCount = document.getElementById('cartCount');
 const cartTotal = document.getElementById('cartTotal');
 const productsGrid = document.getElementById('productsGrid');
+const mobilecartcount=document.getElementById('mobileCartCount');
 
 // Toggle cart sidebar
 cartIcon.addEventListener('click', () => {
@@ -102,6 +103,7 @@ function updateCart() {
     // Update cart count
     const totalQuantity = cart.reduce((sum, item) => sum + item.quantity, 0);
     cartCount.textContent = totalQuantity;
+    mobilecartcount.textContent = totalQuantity;
 
     // Update cart items
     cartItems.innerHTML = cart.map(item => `
