@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NutsForHealth - Premium Nuts & Spices</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/lucide-icons/dist/umd/lucide.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <div class="logo">
+                <i data-lucide="nut" class="logo-icon"></i>
+                <span>NutsForHealth</span>
+            </div>
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#products">Products</a>
+                <a href="#contact">Contact</a>
+                <div class="cart-icon" id="cartIcon">
+                    <i data-lucide="shopping-cart"></i>
+                    <span class="cart-count" id="cartCount">0</span>
+                </div>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <i data-lucide="menu"></i>
+            </div>
+        </div>
+    </nav>
+    <!-- Mobile Sidebar -->
+    <div class="mobile-sidebar" id="mobileSidebar">
+        <div class="sidebar-header">
+            <div class="logo">
+                <i data-lucide="nut" class="logo-icon"></i>
+                <span>NutsForHealth</span>
+            </div>
+            <button class="close-sidebar" id="closeSidebar">
+                <i data-lucide="x"></i>
+            </button>
+        </div>
+        <div class="sidebar-links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#products">Products</a>
+            <a href="#contact">Contact</a>
+            <div class="cart-icon" id="mobileCartIcon">
+                <i data-lucide="shopping-cart"></i>
+                <span class="cart-count" id="mobileCartCount">0</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cart Sidebar -->
+    <div class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h2>Your Cart</h2>
+            <button class="close-cart" id="closeCart">
+                <i data-lucide="x"></i>
+            </button>
+        </div>
+        <div class="cart-items" id="cartItems"></div>
+        <div class="cart-total">
+            <span>Total:</span>
+            <span id="cartTotal">$0.00</span>
+        </div>
+        <button class="checkout-btn">Checkout</button>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="animate-fade-in">Premium Nuts & Spices</h1>
+            <p class="animate-fade-in">Discover nature's finest selection for your healthy lifestyle</p>
+            <a href="#products" class="shop_now">Shop Now</a>
+        </div>
+        <div class="hero-image animate-slide-in">
+            <img src="https://plus.unsplash.com/premium_photo-1697730256547-2714e29202d2?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8ZHJ5JTIwZnJ1aXRzJTJDc3BpY2VzJTIwYW5kJTIwZnJ1aXRzfGVufDB8fDB8fHww" alt="Assorted nuts">
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2>Our Story</h2>
+        <div class="about-content">
+            <div class="about-image">
+                <img src="https://media.istockphoto.com/id/698277772/photo/mix-of-dried-fruits-and-nuts-in-backlit.webp?a=1&b=1&s=612x612&w=0&k=20&c=w8Fl4-pgQMYjFdcYi9rB2iEL_8qremYWCcYron9Q6gM=" alt="spices-img">
+            </div>
+            <div class="about-text">
+                <p>Since 2010, we've been committed to bringing you the highest quality nuts,dry fruits and premium spices. Our products are sourced from sustainable farms and processed with care to preserve their natural goodness.</p>
+                <p>We believe in promoting healthy living through nutritious food choices while maintaining our commitment to environmental sustainability and fair trade practices.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products">
+        <h2>Our Products</h2>
+        <div class="products-grid" id="productsGrid"></div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <div class="contact-container">
+            <div class="contact-form">
+                <h3>Get in Touch</h3>
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+            <div class="contact-info">
+                <h3>Contact Information</h3>
+                <div class="info-item">
+                    <i data-lucide="map-pin"></i>
+                    <p>12,Anna nagar,Ukkadam , Coimbatore 12345</p>
+                </div>
+                <div class="info-item">
+                    <i data-lucide="phone"></i>
+                    <p>+91 95764 XXXXX</p>
+                </div>
+                <div class="info-item">
+                    <i data-lucide="mail"></i>
+                    <p>info@nutsforhealth.com</p>
+                </div>
+                <div class="social-links">
+                    <a href="#" class="social-icon"><i data-lucide="instagram"></i></a>
+                    <a href="#" class="social-icon"><i data-lucide="facebook"></i></a>
+                    <a href="#" class="social-icon"><i data-lucide="twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
