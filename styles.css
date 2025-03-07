@@ -584,13 +584,15 @@ nav {
     .about-content {
         text-align: justify;
         align-items: center;
+        justify-items: center;
         grid-template-columns: 1fr;
     }
     .about-image img
     {
         width: 300px;
         height: 300px;
-        margin-left: 25px;
+        padding: 20px;
+        border-radius: 150px;
     }
 
     .contact-container {
